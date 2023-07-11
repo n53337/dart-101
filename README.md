@@ -1,2 +1,2 @@
-# dart-101
-Taking a look inside Dart programming language
+A sample command-line application with an entrypoint in `bin/`, library code
+in `lib/`, and example unit test in `test/`.
