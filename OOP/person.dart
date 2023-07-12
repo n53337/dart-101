@@ -1,6 +1,7 @@
 import 'human.dart';
+import 'actions.dart';
 
-class Person extends Human{
+class Person extends Human implements Actions{
   int? age;
   String? name;
   bool _isAllowed = false;
@@ -13,12 +14,13 @@ class Person extends Human{
     _isAllowed = value;
   }
 
-  // Person(this.age,[this.name = 'nobody']);
+  @override
+  void move(){
+    print('moving...');
+  }
 
-  // Person({required String name, required int age, required bool isEating}) {
-  //   this.name = name;
-  //   this.age = age;
-  // }
+  @override
+  final String description = "this is a description from Person Class";
 
   @override
   int pray(){
