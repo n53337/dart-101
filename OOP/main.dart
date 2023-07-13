@@ -1,3 +1,4 @@
+import 'actions.dart';
 import 'car.dart';
 import 'engine.dart';
 import 'person.dart';
@@ -10,6 +11,7 @@ void main(){
 
   print(p.description);
   p.move();
+  print(p.getGender(Gender.male));
 
   bmw.makeCar();
 }

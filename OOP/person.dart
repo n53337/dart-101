@@ -19,6 +19,8 @@ class Person extends Human implements Actions{
     print('moving...');
   }
 
+
+
   @override
   final String description = "this is a description from Person Class";
 
@@ -27,5 +29,10 @@ class Person extends Human implements Actions{
     super.pray();
     print('right now');
     return 0;
+  }
+
+  @override
+  String getGender(Gender gender) {
+    return "you gernder is $gender";
   }
 }
